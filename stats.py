@@ -21,5 +21,7 @@ def median(values):
 
 def variance(values):
     """Population variance of a non-empty sequence of numbers."""
+    if not values:
+        raise ValueError("variance of an empty sequence")
     centre = mean(values)
     return sum((value - centre) ** 2 for value in values) / len(values)
