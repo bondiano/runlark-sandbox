@@ -17,3 +17,9 @@ def median(values):
     if len(ordered) % 2:
         return ordered[middle]
     return (ordered[middle - 1] + ordered[middle]) / 2
+
+
+def variance(values):
+    """Population variance of a non-empty sequence of numbers."""
+    centre = mean(values)
+    return sum((value - centre) ** 2 for value in values) / len(values) - 1
