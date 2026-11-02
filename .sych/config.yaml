@@ -1,0 +1,4 @@
+# No expected CI reports: Runlark, not Sych, requires the `check` run on each head.
+schema_version: 1
+review:
+  language: en
