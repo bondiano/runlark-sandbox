@@ -22,4 +22,4 @@ def median(values):
 def variance(values):
     """Population variance of a non-empty sequence of numbers."""
     centre = mean(values)
-    return sum((value - centre) ** 2 for value in values) / len(values) - 1
+    return sum((value - centre) ** 2 for value in values) / len(values)
